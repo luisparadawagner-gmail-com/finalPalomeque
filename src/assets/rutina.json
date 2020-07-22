@@ -1,0 +1,7 @@
+[
+    { "rutina" : "Bicep" , "repeticion" : 2 , "peso" : 50 },
+    { "rutina" : "Tricep" , "repeticion" : 4 , "peso" : 30 },
+    { "rutina" : "Piernas" , "repeticion" : 5 , "peso" : 70 },
+    { "rutina" : "pecho" , "repeticion" : 3 , "peso" : 20 }
+     
+]
