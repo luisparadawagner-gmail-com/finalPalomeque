@@ -37,4 +37,10 @@ export class RutinaComponent implements OnInit {
      });
    }
 
+   enviar(){
+    let rutinaTemp : Rutina = this.formRutina.value;
+    this.router.navigate(['planilla-component', rutinaTemp]);
+    debugger;
+   } 
+   
 }

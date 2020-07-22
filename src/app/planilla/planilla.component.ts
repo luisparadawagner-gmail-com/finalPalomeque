@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ClienteComponent } from './../cliente/cliente.component';
+import { RutinaComponent } from './../rutina/rutina.component';
 import { Cliente } from './../claseCliente/cliente';
+import { Rutina } from './../claseRutina/rutina';
 import { ServicioService } from '../servicio/servicio.service';
 
 @Component({
@@ -11,7 +13,7 @@ import { ServicioService } from '../servicio/servicio.service';
 })
 export class PlanillaComponent implements OnInit {
 
-  displayedColumns: string [] = ['nombre' , 'apellido' , 'telefono', 'direccion', 'nacimiento', 'modificar'];
+  displayedColumns: string [] = ['nombre' , 'apellido' , 'telefono', 'direccion', 'nacimiento', 'rutina', 'repeticiones', 'peso', 'agregar', 'modificar'];
   dataSource : any[] = [];
   param : any;
 
@@ -20,6 +22,7 @@ export class PlanillaComponent implements OnInit {
   ngOnInit() {
 
     this.getCliente();
+    // this.getRutina();
 
   }
 
@@ -50,6 +53,35 @@ export class PlanillaComponent implements OnInit {
     }
 
     this.router.navigate(['/cliente-component', cliente]);
+    debugger;	
+  }
+
+  // getRutina(){
+  //   this.servicioService.getRutina().subscribe((rutina)=>{
+  //     debugger;
+  //     this.dataSource = rutina;
+
+  //     this.param = this.route.snapshot.params;
+  //     if (Object.keys(this.param).length > 0){
+  //       this.recibeRutina(this.param);
+  //     }
+  //   });
+  // }
+
+  // recibeRutina(rutina : RutinaComponent){
+  //   debugger;
+  //   this.dataSource.push(rutina);
+  // }
+
+  agregar(rutina) {	
+    let rutinaTemp : Rutina = {
+      rutina : rutina.rutina,
+      repeticiones : rutina.repeticiones,
+      peso : rutina.peso
+      
+    }
+
+    this.router.navigate(['/rutina-component', rutina]);
     debugger;	
   }
 

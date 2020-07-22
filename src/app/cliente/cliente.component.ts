@@ -39,5 +39,10 @@ export class ClienteComponent implements OnInit {
       nacimiento : [modiicado ? modiicado.nacimiento:'', Validators.required]
      });
    }
+   enviar(){
+    let clienteTemp : Cliente = this.formCliente.value;
+    this.router.navigate(['planilla-component', clienteTemp]);
+    debugger;
+   } 
 
 }

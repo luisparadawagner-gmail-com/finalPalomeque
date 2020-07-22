@@ -12,4 +12,8 @@ export class ServicioService {
   getCliente(): Observable<any>{
     return this.httpCliente.get('./../assets/cliente.json'); 
   }
+
+  // getRutina(): Observable<any>{
+  //   return this.httpCliente.get('./../assets/rutina.json'); 
+  // }
 }
