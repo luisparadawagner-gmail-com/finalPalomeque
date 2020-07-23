@@ -1,10 +1,10 @@
 [
     { "nombre" : "Okinishi" , "apellido" : "Kazuaki" , "telefono" : 2995543452 ,
-        "direccion" : "farallon negro 456" , "nacimiento" : "17/07/1961", "rutina" : "brazo", "repeticiones" : 3, "peso" : 40 },
+        "direccion" : "farallon negro 456" , "nacimiento" : "17/07/1961"},
         { "nombre" : "Dario" , "apellido" : "Arenhardt" , "telefono" : 2942402345 ,
-        "direccion" : "las aves casa 6" , "nacimiento" : "20/08/1991", "rutina" : "tricep", "repeticiones" : 4, "peso" : 10 },
+        "direccion" : "las aves casa 6" , "nacimiento" : "20/08/1991"},
         { "nombre" : "Johan" , "apellido" : "Strauss" , "telefono" : 2994032412,
-        "direccion" : "alemania 213" , "nacimiento" : "2/05/1990", "rutina" : "piernas", "repeticiones" : 2, "peso" : 70 },
+        "direccion" : "alemania 213" , "nacimiento" : "2/05/1990"},
         { "nombre" : "Guadalupe" , "apellido" : "Rodriguez" , "telefono" : 2942366540 ,
-        "direccion" : "yrigoyen 216" , "nacimiento" : "27/02/1998", "rutina" : "pecho", "repeticiones" : 3, "peso" : 20 }
+        "direccion" : "yrigoyen 216" , "nacimiento" : "27/02/1998"}
 ]
